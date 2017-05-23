@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mediaBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorAccentOpacity"
+        android:gravity="center">
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="20" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/mybutton"
+            android:src="@drawable/shuffle"
+            android:scaleType="fitStart"
+            android:layout_margin="5dp"
+
+            />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/mybutton"
+            android:src="@drawable/back"
+            android:scaleType="fitStart"
+            android:layout_margin="5dp"
+
+            />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/mybutton"
+            android:src="@drawable/play"
+            android:scaleType="fitStart"
+            android:layout_margin="5dp"
+
+            />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/mybutton"
+            android:src="@drawable/next"
+            android:scaleType="fitStart"
+            android:layout_margin="5dp"
+
+            />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="@drawable/mybutton"
+            android:src="@drawable/mute"
+            android:scaleType="fitStart"
+            android:layout_margin="5dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
