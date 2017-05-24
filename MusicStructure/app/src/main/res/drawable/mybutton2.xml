@@ -8,14 +8,6 @@
             <stroke android:width="1dip" android:color="@color/colorPrimary" />
         </shape>
     </item>
-    <item android:state_checked="true" >
-        <shape android:shape="rectangle">
-            <solid android:color="#b7ff4081"></solid>
-            <stroke android:width="1dip" android:color="#8d4a9f" />
-            <corners android:radius="30dp"></corners>
-            <stroke android:width="1dip" android:color="@color/colorPrimary" />
-        </shape>
-    </item>
     <item android:state_focused="true">
         <shape android:shape="rectangle">
             <corners android:radius="30dp"></corners>
@@ -28,7 +20,7 @@
         <shape android:shape="rectangle">
             <corners android:radius="30dp"></corners>
             <solid
-                android:color="@color/colorAccentOpacity">
+                android:color="@color/colorAccent">
             </solid>
             <stroke android:width="1dip" android:color="@color/colorAccentOpacity" />
         </shape>

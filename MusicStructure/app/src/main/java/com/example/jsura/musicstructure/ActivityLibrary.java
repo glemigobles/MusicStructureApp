@@ -1,6 +1,5 @@
 package com.example.jsura.musicstructure;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,23 +8,22 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
-
+public class ActivityLibrary extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_library);
 
-        String text = getString(R.string.toast1);
+        String text = getString(R.string.toast2);
 
         Toast toast = Toast.makeText(this, text,
                 Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
 
-        Button btnNowPLaying = (Button) findViewById(R.id.buttonNowPLaying);
-        btnNowPLaying.setBackgroundResource(R.drawable.mybutton2);
+        Button btnLibrary = (Button) findViewById(R.id.buttonLibrary);
+        btnLibrary.setBackgroundResource(R.drawable.mybutton2);
 
         Button btnPlaylist = (Button) findViewById(R.id.buttonPlaylist);
         btnPlaylist.setOnClickListener(new View.OnClickListener() {
@@ -35,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btnLibrary = (Button) findViewById(R.id.buttonLibrary);
-        btnLibrary.setOnClickListener(new View.OnClickListener() {
+        Button btnNowPlaying = (Button) findViewById(R.id.buttonNowPLaying);
+        btnNowPlaying.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToLibrary();
+                goToNowPlaying();
             }
         });
 
@@ -51,9 +49,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void goToLibrary() {
+    public void goToNowPlaying() {
 
-        Intent i = new Intent(this, ActivityLibrary.class);
+        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
 }
+
+

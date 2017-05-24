@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MusicPlayer</string>
+    <string name="artistName">Artist Name</string>
+    <string name="songTitle">Song Title</string>
+    <string name="playlist">Playlist</string>
+    <string name="now_playing">Now playing</string>
+    <string name="library">Library</string>
+    <string name="toast1">Thats main screen, here is display current song title, artist name and cd cover </string>
+    <string name="toast3">Here is place for playlist, user could see current playlist, add new playlist etc. </string>
+    <string name="toast2">Here is place for Library, user could set music libraries here. User colud set internet or local library </string>
 </resources>
