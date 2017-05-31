@@ -8,4 +8,6 @@
     <string name="toast1">Thats main screen, here is display current song title, artist name and cd cover </string>
     <string name="toast3">Here is place for playlist, user could see current playlist, add new playlist etc. </string>
     <string name="toast2">Here is place for Library, user could set music libraries here. User colud set internet or local library </string>
+    <string name="library_text">Library will be divided on two sections: local files and internet sources. Library will be manegaed by class Library. It will has methods to scan local files, add them to local library and make posibility to create playlists. Also it will has method to connect chosen internet cloud library like soundcloud and spotify and download playlist from there.</string>
+    <string name="playlist_text">Playlist will be managed by class: Playlist, witch will has methods to store and load playlist from database.</string>
 </resources>
